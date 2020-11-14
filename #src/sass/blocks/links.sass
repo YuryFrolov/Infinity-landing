@@ -1,0 +1,65 @@
+.links
+    display: flex
+    flex-direction: column
+    @media (min-width: 1199px)
+        flex-direction: row
+        gap: 30px
+
+.links__link
+    transition: 0.2s
+    position: relative
+    flex-shrink: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 20px
+    font-family: 'Montserrat', sans-serif
+    font-size: 20px
+    font-weight: bold
+    color: #ffffff
+    text-align: center
+    text-shadow: 3px 2px 0px #000000
+    border-radius: 50px
+    width: 260px
+    height: 60px
+    background: linear-gradient(0deg, rgba(153,0,255,1) 0%, rgba(179,64,255,1) 100%)
+    @media (min-width: 1199px)
+        border-radius: 10px
+        width: 200px
+        height: 60px
+        &--transparent
+            opacity: 0.5
+            &:hover
+                opacity: 1
+    @media (max-width: 1198px)
+        &--business
+            margin-bottom: 120px
+            &::before
+                content: ''
+                position: absolute
+                bottom: 0
+                background: url(../img/business.webp) no-repeat
+                background-size: contain
+                transform: translateY(22px) translateX(8px)
+                height: 250px
+                width: 250px
+                z-index: 0
+
+        &--investor
+            &::before
+                content: ''
+                position: absolute
+                bottom: 0
+                background: url(../img/investor.webp) no-repeat
+                background-size: contain
+                transform: translateY(22px) translateX(8px)
+                height: 250px
+                width: 250px
+                z-index: 0
+
+.links__text
+    z-index: 1
+
+.links__arrow
+    @media (min-width: 1199px)
+        display: none 

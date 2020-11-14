@@ -1,0 +1,86 @@
+.footer
+    background-color: #0f0f0f
+
+.footer__container
+    max-width: 280px
+
+.footer__title
+    margin: 0 auto
+    font-size: 36px
+    color: #ffffff
+    font-weight: bold
+    text-align: center
+    margin-bottom: 20px
+
+.footer__description
+    margin: 0 auto
+    margin-bottom: 40px
+    font-size: 24px
+    color: #ffffff
+    font-weight: bold
+    text-align: center
+
+.footer__description-top
+    display: block
+    margin-bottom: 20px
+
+.footer__description-bottom
+
+.footer__links
+    text-shadow: 2px 2px #000000
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.footer__links-container
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    width: 250px
+    height: 100px
+    border-radius: 100px
+    &:nth-child(1)
+        margin-bottom: 20px
+        background: url('../img/btn-background-top.webp') bottom center/ 100% no-repeat
+    &:nth-child(2)
+        background: url('../img/btn-background-bottom.webp') bottom center/ 100% no-repeat
+
+.footer__link
+    display: block
+    width: 90%
+    font-size: 20px
+    font-weight: bold
+    color: #ffffff
+
+@media (min-width: 1199px)
+    .footer__container
+        max-width: 1440px
+
+    .footer__title
+        font-size: 48px
+        margin-bottom: 10px
+
+    .footer__description
+        font-size: 30px
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .footer__description-top
+        max-width: 600px
+        margin-bottom: 10px
+
+    .footer__links
+        flex-direction: row
+        justify-content: center
+        gap: 100px
+    
+    .footer__link
+        font-size: 24px
+
+    .footer__links-container
+        width: 280px
+        &:nth-child(1)
+            margin-bottom: 20px
+            background: url('../img/btn-background-bottom.webp') bottom center/ 100% no-repeat
